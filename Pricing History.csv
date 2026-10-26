@@ -1,0 +1,13 @@
+Product ID,Product Name,Old Price,New Price,Change Date,Reason,Approved By,Expected Impact,Status,Review Date,Remarks
+P001,Amul Taaza Milk,58,60,2026-08-20,Supplier Cost Increase,Category Manager,Maintain Margin,Approved,2026-09-20,Monitor customer response
+P002,Amul Curd,40,38,2026-08-15,Competitive Pricing,Category Manager,Increase Volume,Approved,2026-09-15,Positive response expected
+P003,Aashirvaad Atta,295,285,2026-08-25,Promotion,Category Manager,Increase Sales,Active,2026-09-10,Festival preparation
+P004,Tata Salt,30,28,2026-08-18,Competitor Pricing,Category Manager,Maintain Market Share,Active,2026-09-18,Competitive pricing
+P005,Fortune Sunflower Oil,132,138,2026-08-28,Supplier Cost Increase,Category Manager,Protect Margin,Approved,2026-09-28,Monitor demand
+P006,Surf Excel Matic,399,389,2026-08-22,Promotion,Category Manager,Increase Volume,Active,2026-09-12,Promotion running
+P007,Colgate Strong Teeth,115,109,2026-08-30,Competitive Pricing,Category Manager,Increase Market Share,Active,2026-09-15,Monitor sales
+P008,Coca-Cola Soft Drink,92,88,2026-08-29,Summer Promotion,Category Manager,Increase Volume,Active,2026-09-10,High demand expected
+P009,Lays Magic Masala,30,28,2026-08-27,Promotion,Category Manager,Increase Volume,Active,2026-09-08,Fast moving
+P010,Parle-G Biscuits,85,78,2026-08-26,Promotion,Category Manager,Increase Sales,Active,2026-09-08,Promotion demand
+P014,London Dairy Ice Cream,530,499,2026-08-28,Summer Promotion,Category Manager,Increase Volume,Active,2026-09-08,Seasonal demand
+P017,Thums Up Soft Drink,92,88,2026-08-29,Summer Promotion,Category Manager,Increase Volume,Active,2026-09-10,High summer demand

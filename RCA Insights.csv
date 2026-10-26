@@ -1,0 +1,13 @@
+Issue Type,Product ID,Product Name,Detected Date,Main Reason,Supporting Reason,Business Impact,Suggested Action,Priority,Status,Remarks
+Stockout Risk,P001,Amul Taaza Milk,2026-09-04,High Demand,Daily sales above forecast,Lost Sales Risk,Increase replenishment quantity,High,Open,Monitor daily
+Stockout Risk,P003,Aashirvaad Atta,2026-09-04,Low Inventory,Current stock below reorder level,Potential Lost Sales,Place urgent purchase order,High,Open,Purchase pending
+Stockout Risk,P005,Fortune Sunflower Oil,2026-09-04,Increasing Demand,Weekend demand increasing,Revenue Loss Risk,Increase order quantity,High,Open,Partial shipment received
+Stockout Risk,P007,Colgate Strong Teeth,2026-09-04,Sales Growth,Recent sales above average,Lost Sales Risk,Increase replenishment,Medium,Open,Monitor sales
+Stockout Risk,P010,Parle-G Biscuits,2026-09-04,Promotion,Promotion increased demand,Inventory Depletion,Expedite replenishment,High,Open,Promotion active
+Stockout Risk,P014,London Dairy Ice Cream,2026-09-04,Seasonal Demand,Summer demand peak,High Lost Sales Risk,Place urgent purchase order,Critical,Open,Cold storage required
+Stockout Risk,P017,Thums Up Soft Drink,2026-09-04,Summer Demand,High beverage demand,Potential Stockout,Increase safety stock,High,Open,Monitor demand
+Supplier Delay,P005,Fortune Sunflower Oil,2026-09-04,Supplier Delay,Partial delivery received,Stock Pressure,Follow up with supplier,High,Open,300 units received
+Supplier Delay,P011,Clinic Plus Shampoo,2026-09-04,Partial Shipment,Only half quantity received,Low Inventory,Request balance quantity,Medium,Open,200 units received
+Demand Increase,P008,Coca-Cola Soft Drink,2026-09-04,Summer Season,Forecast demand increased,Potential Stockout,Increase safety stock,High,Open,Seasonal product
+Demand Increase,P009,Lays Magic Masala,2026-09-04,Fast Moving Sales,High daily sales,Inventory Pressure,Increase reorder quantity,Medium,Open,Monitor
+Demand Increase,P014,London Dairy Ice Cream,2026-09-04,Summer Season,Forecast demand increased,High Revenue Opportunity,Increase inventory before demand peak,High,Open,Seasonal product

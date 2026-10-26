@@ -1,0 +1,13 @@
+PO Number,Product ID,Supplier,Ordered Quantity,Unit Cost,Order Date,Expected Delivery,Received Quantity,Delivery Status,Remarks
+PO5001,P001,Amul Distributors,600,55,2026-09-03,2026-09-05,0,Pending,High priority replenishment
+PO5002,P003,ITC Distributors,500,250,2026-09-02,2026-09-06,0,Pending,Low stock
+PO5003,P005,Adani Wilmar Distributors,700,120,2026-09-02,2026-09-05,300,Partially Received,High demand
+PO5004,P007,Colgate Distributors,300,90,2026-09-03,2026-09-07,0,Pending,Stock below reorder
+PO5005,P010,Parle Distributors,600,65,2026-09-01,2026-09-04,600,Received,Promotion stock
+PO5006,P014,London Dairy Distributors,250,430,2026-09-03,2026-09-05,0,Pending,Seasonal demand
+PO5007,P011,HUL Distributors,400,195,2026-09-02,2026-09-06,200,Partially Received,Restock
+PO5008,P015,HUL Distributors,300,115,2026-09-01,2026-09-05,300,Received,Normal replenishment
+PO5009,P008,Coca-Cola Distributors,800,75,2026-09-02,2026-09-05,800,Received,High summer demand
+PO5010,P009,PepsiCo Distributors,1000,23,2026-09-03,2026-09-06,0,Pending,Fast moving product
+PO5011,P017,Coca-Cola Distributors,700,75,2026-09-03,2026-09-06,0,Pending,Summer demand
+PO5012,P019,KRBL Distributors,500,420,2026-09-02,2026-09-07,250,Partially Received,Staples replenishment

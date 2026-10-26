@@ -1,0 +1,14 @@
+Date,Product ID,Product Name,Actual Sales,Forecast Sales,Forecast Accuracy,Season,Trend,Model Used,Confidence,Remarks
+2026-09-01,P001,Amul Taaza Milk,120,125,96,All,Stable,Moving Average,High,Consistent demand
+2026-09-01,P002,Amul Curd,85,90,94,All,Stable,Moving Average,High,Normal demand
+2026-09-01,P003,Aashirvaad Atta,65,72,91,All,Stable,Prophet,Medium,Weekend demand
+2026-09-01,P005,Fortune Sunflower Oil,92,105,88,All,Increasing,Prophet,Medium,Demand increasing
+2026-09-01,P007,Colgate Strong Teeth,45,60,82,All,Increasing,Prophet,Medium,Recent demand growth
+2026-09-01,P008,Coca-Cola Soft Drink,150,180,95,Summer,Increasing,Prophet,High,Seasonal increase
+2026-09-01,P009,Lays Magic Masala,180,190,97,All,Stable,Moving Average,High,Fast moving
+2026-09-01,P010,Parle-G Biscuits,110,140,89,All,Increasing,Prophet,Medium,Promotion impact
+2026-09-01,P011,Clinic Plus Shampoo,45,65,84,All,Increasing,Prophet,Medium,Demand increasing
+2026-09-01,P014,London Dairy Ice Cream,75,110,93,Summer,Increasing,Prophet,High,Seasonal peak
+2026-09-01,P017,Thums Up Soft Drink,140,175,90,Summer,Increasing,Prophet,High,Seasonal increase
+2026-09-01,P019,India Gate Basmati Rice,60,75,87,All,Increasing,Prophet,Medium,Festival demand expected
+2026-09-01,P020,Maggi 2-Minute Noodles,95,110,90,All,Stable,Moving Average,High,Consistent demand

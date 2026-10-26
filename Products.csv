@@ -1,0 +1,21 @@
+Product ID,Product Name,Category,Subcategory,Brand,Unit,Pack Size,MRP,Selling Price,Supplier Name,TaxRate,Status
+P001,Amul Taaza Milk,Dairy,Milk,Amul,Litre,1L,62,60,Amul Distributors,5,Active
+P002,Amul Curd,Dairy,Curd,Amul,Kilogram,500g,40,38,Amul Distributors,5,Active
+P003,Aashirvaad Atta,Staples,Flour,Aashirvaad,Kilogram,5Kg,310,285,ITC Distributors,5,Active
+P004,Tata Salt,Staples,Salt,Tata,Kilogram,1Kg,30,28,Tata Consumer Distributors,5,Active
+P005,Fortune Sunflower Oil,Staples,Cooking Oil,Fortune,Litre,1L,145,138,Adani Wilmar Distributors,5,Active
+P006,Surf Excel Matic,Home Care,Laundry Detergent,Surf Excel,Kilogram,2Kg,420,389,HUL Distributors,18,Active
+P007,Colgate Strong Teeth,Personal Care,Toothpaste,Colgate,Piece,200g,125,109,Colgate Distributors,18,Active
+P008,Coca-Cola Soft Drink,Beverages,Carbonated Drinks,Coca-Cola,Litre,2L,95,88,Coca-Cola Distributors,28,Active
+P009,Lays Magic Masala,Snacks,Potato Chips,Lays,Pack,100g,30,28,PepsiCo Distributors,12,Active
+P010,Parle-G Biscuits,Snacks,Biscuits,Parle,Pack,800g,85,78,Parle Distributors,12,Active
+P011,Clinic Plus Shampoo,Personal Care,Shampoo,Clinic Plus,Bottle,340ml,260,229,HUL Distributors,18,Active
+P012,Vim Dishwash Liquid,Home Care,Dishwash,Bottle,500ml,125,112,HUL Distributors,18,Active
+P013,Dettol Handwash,Personal Care,Handwash,Bottle,250ml,95,89,Reckitt Distributors,18,Active
+P014,London Dairy Ice Cream,Dairy,Ice Cream,London Dairy,Piece,500ml,250,220,London Dairy Distributors,18,Active
+P015,Amul Butter,Dairy,Butter,Amul,Pack,500g,290,275,Amul Distributors,12,Active
+P016,Mother Dairy Paneer,Dairy,Paneer,Mother Dairy,Pack,200g,95,85,Mother Dairy Distributors,5,Active
+P017,Thums Up Soft Drink,Beverages,Carbonated Drinks,Thums Up,Bottle,2L,100,90,Coca-Cola Distributors,28,Active
+P018,Britannia Cheese,Dairy,Cheese,Britannia,Pack,200g,150,135,Britannia Distributors,12,Active
+P019,India Gate Basmati Rice,Staples,Rice,India Gate,Kilogram,5Kg,650,599,India Gate Distributors,5,Active
+P020,Maggi 2-Minute Noodles,Instant Food,Noodles,Maggi,Pack,70g,15,14,Nestle Distributors,12,Active

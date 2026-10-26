@@ -1,0 +1,14 @@
+Event Name,Event Date,Product ID,Product Name,Expected Impact,Region,Historical Lift,Confidence,Event Type,Source,Remarks
+Summer Season,2026-04-01,P008,Coca-Cola Soft Drink,+35%,Telangana,35,High,Seasonal,Historical Sales,Increase beverage inventory
+Summer Season,2026-04-01,P014,London Dairy Ice Cream,+48%,Telangana,48,High,Seasonal,Historical Sales,Increase cold storage inventory
+Summer Season,2026-04-01,P009,Lays Magic Masala,+18%,Telangana,18,Medium,Seasonal,Historical Sales,Increase snack inventory
+Summer Season,2026-04-01,P017,Thums Up Soft Drink,+32%,Telangana,32,High,Seasonal,Historical Sales,Increase beverage inventory
+Summer Season,2026-04-01,P001,Amul Taaza Milk,+12%,Telangana,12,Medium,Seasonal,Historical Sales,Stable dairy demand
+Diwali Festival,2026-10-20,P010,Parle-G Biscuits,+30%,Telangana,30,High,Festival,Historical Sales,Increase family pack inventory
+Diwali Festival,2026-10-20,P003,Aashirvaad Atta,+28%,Telangana,28,High,Festival,Historical Sales,Increase staples inventory
+Diwali Festival,2026-10-20,P005,Fortune Sunflower Oil,+42%,Telangana,42,High,Festival,Historical Sales,Increase cooking oil inventory
+Diwali Festival,2026-10-20,P019,India Gate Basmati Rice,+38%,Telangana,38,High,Festival,Historical Sales,Increase rice inventory
+Monsoon Season,2026-06-01,P013,Dettol Handwash,+25%,Telangana,25,High,Seasonal,Historical Sales,Increase hygiene inventory
+Monsoon Season,2026-06-01,P020,Maggi 2-Minute Noodles,+20%,Telangana,20,Medium,Seasonal,Historical Sales,Increase convenience food inventory
+Republic Day,2027-01-26,P010,Parle-G Biscuits,+12%,All India,12,Medium,Festival,Historical Sales,Moderate demand increase
+Independence Day,2026-08-15,P009,Lays Magic Masala,+16%,Telangana,16,Medium,Festival,Historical Sales,Increase snack inventory

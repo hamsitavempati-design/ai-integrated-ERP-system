@@ -1,0 +1,21 @@
+Order ID,Product ID,Quantity Sold,Selling Price,Sale Date,Customer Type,Region,Sales Channel,Discount,Remarks
+ORD1001,P001,120,60,2026-09-01,Regular,Hyderabad,Store,2,High morning demand
+ORD1002,P002,85,38,2026-09-01,Regular,Hyderabad,Store,1,Normal demand
+ORD1003,P003,65,285,2026-09-01,Family,Hyderabad,Store,5,Weekend shopping
+ORD1004,P005,92,138,2026-09-01,Regular,Hyderabad,Store,3,High demand
+ORD1005,P008,150,88,2026-09-01,Regular,Hyderabad,Store,4,Hot weather demand
+ORD1006,P009,180,28,2026-09-02,Regular,Hyderabad,Store,2,Fast moving
+ORD1007,P010,110,78,2026-09-02,Family,Hyderabad,Store,5,Promotion
+ORD1008,P014,75,499,2026-09-02,Regular,Hyderabad,Store,8,Seasonal demand
+ORD1009,P007,45,109,2026-09-02,Regular,Hyderabad,Online,4,Online demand rising
+ORD1010,P001,135,60,2026-09-02,Family,Hyderabad,Store,2,High demand
+ORD1011,P005,105,138,2026-09-03,Regular,Hyderabad,Store,3,Increasing demand
+ORD1012,P008,175,88,2026-09-03,Regular,Hyderabad,Store,4,High summer demand
+ORD1013,P014,90,499,2026-09-03,Family,Hyderabad,Store,8,Seasonal peak
+ORD1014,P010,125,78,2026-09-03,Regular,Hyderabad,Store,5,Promotion
+ORD1015,P003,70,285,2026-09-03,Family,Hyderabad,Store,5,Stable demand
+ORD1016,P007,55,109,2026-09-03,Regular,Hyderabad,Online,4,Online demand rising
+ORD1017,P009,210,28,2026-09-03,Regular,Hyderabad,Store,2,Very fast moving
+ORD1018,P017,140,88,2026-09-03,Regular,Hyderabad,Store,4,Hot weather demand
+ORD1019,P019,60,475,2026-09-03,Family,Hyderabad,Store,5,Staples demand
+ORD1020,P020,95,64,2026-09-03,Regular,Hyderabad,Store,3,Normal demand

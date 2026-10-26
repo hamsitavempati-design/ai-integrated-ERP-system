@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERP System</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/index.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main id="login-screen" class="login-page">
+    <section class="login-shell">
+      <div class="brand-panel">
+        <div class="brand-orbit orbit-one"></div><div class="brand-orbit orbit-two"></div>
+        <div class="brand-content">
+          <div class="brand-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"><path d="M8 29l10-6 10 6v11l-10 6-10-6zM27 29l10-6 10 6v11l-10 6-10-6zM18 17l10-6 10 6v11l-10 6-10-6z"/></g></svg></div>
+          <h1>Enterprise<br>Resource<br>Planning</h1>
+          <p>A unified platform for inventory, sales, purchasing, suppliers and business insights.</p>
+          <div class="brand-footer">PLAN <span>•</span> TRACK <span>•</span> GROW</div>
+        </div>
+      </div>
+      <div class="login-panel">
+        <form id="loginForm" class="login-form" novalidate>
+          <header class="login-heading"><h2>Sign in</h2><p>Access your enterprise workspace.</p></header>
+          <div class="provider-row">
+            <button class="provider-button" id="googleButton" type="button"><b class="google-g">G</b> Continue with Google</button>
+            <button class="provider-button" id="emailButton" type="button">✉ Continue with Email</button>
+          </div>
+          <div class="divider"><span>OR</span></div>
+          <div class="field"><label for="username">Email address</label><input id="username" name="email" type="email" autocomplete="username" placeholder="you@company.com" required></div>
+          <div class="field"><label for="password">Password</label><div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button type="button" id="passwordToggle" class="eye-button" aria-label="Show password"><svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+          <div class="login-options"><label class="remember-label"><input type="checkbox" id="rememberMe"><span class="checkmark"></span><span>Remember me</span></label><button type="button" class="text-button" id="forgotPassword">Forgot password?</button></div>
+          <p id="login-error" class="form-message" role="alert" aria-live="polite"></p>
+          <button type="submit" id="login-button" class="primary-button login-button">Log in</button>
+          <p class="login-note">Secure access for your enterprise team.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <main id="app-screen" class="app-shell is-hidden sidebar-collapsed">
+    
+<button
+  type="button"
+  id="sidebarToggle"
+  class="sidebar-toggle"
+  aria-label="Open sidebar"
+  aria-controls="appSidebar"
+  aria-expanded="false"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<aside class="sidebar" id = "appsidebar"><a href="#" class="sidebar-brand" id="brandHome"><span class="mini-logo">⬡</span><span><strong>ERP System</strong><small>Enterprise Resource Planning</small></span></a>
+<nav class="sidebar-nav" aria-label="Sidebar utilities">
+  <p class="sidebar-section-label">DATA &amp; TOOLS</p>
+
+  <button class="sidebar-link" type="button" data-sidebar-action="upload">
+    <span class="sidebar-icon">⇧</span>
+    <span>Upload Data</span>
+  </button>
+
+  <button class="sidebar-link" type="button" data-sidebar-action="data">
+    <span class="sidebar-icon">▤</span>
+    <span>Data Management</span>
+  </button>
+
+  <button class="sidebar-link" type="button" data-sidebar-action="activity">
+    <span class="sidebar-icon">◷</span>
+    <span>Activity History</span>
+  </button>
+
+  <p class="sidebar-section-label">ACCOUNT</p>
+
+  <button class="sidebar-link" type="button" data-sidebar-action="profile">
+    <span class="sidebar-icon">♙</span>
+    <span>My Profile</span>
+  </button>
+
+  <button class="sidebar-link" type="button" data-sidebar-action="settings">
+    <span class="sidebar-icon">⚙</span>
+    <span>Settings</span>
+  </button>
+
+  <button class="sidebar-link" type="button" data-sidebar-action="help">
+    <span class="sidebar-icon">?</span>
+    <span>Help &amp; Documentation</span>
+  </button>
+</nav>
+
+<div class="sidebar-bottom">
+  <button class="sidebar-link sidebar-logout" id="sidebarLogout"
+          type="button">
+    <span class="sidebar-icon">↪</span>
+    <span>Log Out</span>
+  </button>
+
+  <div class="sidebar-workspace-status">
+    <span class="status-dot"></span> Workspace ready
+  </div>
+</div>
+<div class="sidebar-bottom"><span class="status-dot"></span> Workspace ready</div></aside>
+    <section class="workspace">
+      <header class="topbar"><div class="breadcrumbs">Workspace <span>/</span> <strong id="breadcrumbCurrent">Overview</strong></div><div class="topbar-actions"><label class="global-search"><span>⌕</span><input id="globalSearch" type="search" placeholder="Search products, insights..." aria-label="Search products and insights"><kbd>Ctrl K</kbd></label><button type="button" class="icon-button" id="notificationButton" aria-label="Notifications">♧<i></i></button><button type="button" class="avatar-button" id="profileButton" aria-label="Account menu">OW</button><div id="header-popover" class="header-popover is-hidden"></div></div></header>
+      <div class="page-content">
+        <section class="page-heading"><div><p class="eyebrow">ENTERPRISE WORKSPACE</p><h1 id="pageTitle">Overview</h1><p id="pageSubtitle">A clear view of your store's performance and operations.</p></div><div class="heading-actions"><span class="live-status"><span></span> Live workspace</span><button class="primary-button compact" id="exportReport">⇩ Export report</button></div></section>
+        <section id="overview-page" class="page-view">
+          <div class="kpi-grid">
+            <article class="kpi-card"><div class="kpi-top">Total sales revenue <span class="kpi-icon blue">₹</span></div><strong id="kpiRevenue">₹2,82,176</strong><div class="kpi-foot">Sales history <span>Selected dataset</span></div></article>
+            <article class="kpi-card"><div class="kpi-top">Units sold <span class="kpi-icon violet">↗</span></div><strong id="kpiUnits">2,182</strong><div class="kpi-foot">Sales volume <span>Recorded units</span></div></article>
+            <article class="kpi-card"><div class="kpi-top">Products to review <span class="kpi-icon amber">!</span></div><strong id="kpiLowStock">10</strong><div class="kpi-foot">Reorder threshold <span>Check stock</span></div></article>
+            <article class="kpi-card"><div class="kpi-top">Supplier risks <span class="kpi-icon red">↗</span></div><strong id="kpiSuppliers">3</strong><div class="kpi-foot">Needs attention <span>Delivery signals</span></div></article>
+          </div>
+          <div class="dashboard-grid"><article class="panel"><div class="panel-heading"><div><h2>Monthly sales</h2><p>Revenue trend across the reporting period</p></div><select id="salesRange" aria-label="Sales chart period"><option value="6">Last 6 months</option><option value="12">Last 12 months</option></select></div><div class="chart-wrap"><canvas id="salesChart"></canvas></div></article><article class="panel"><div class="panel-heading"><div><h2>High-selling products</h2><p>Top items by units sold</p></div><button type="button" class="link-button" data-page="high-sellers">View all →</button></div><div id="topProductsList"></div></article></div>
+          <div class="section-title-row"><div><h2>Business intelligence</h2><p>Choose an area to explore</p></div></div>
+          <div class="feature-grid">
+            <button class="feature-card" type="button" data-page="restocking"><span class="feature-icon blue-bg">▣</span><span><strong>Restocking predictions</strong><small>Identify low-stock items and plan replenishment.</small><em>Open predictions →</em></span></button>
+            <button class="feature-card" type="button" data-page="seasonal"><span class="feature-icon purple-bg">✳</span><span><strong>Seasonal & festival forecast</strong><small>Explore seasonal demand and festival-ready products.</small><em>View forecast →</em></span></button>
+            <button class="feature-card" type="button" data-page="root-cause"><span class="feature-icon amber-bg">⌕</span><span><strong>Root cause analysis</strong><small>Investigate sales changes, stock issues and supplier risks.</small><em>Analyze causes →</em></span></button>
+            <button class="feature-card" type="button" data-page="inventory"><span class="feature-icon green-bg">▤</span><span><strong>Product inventory</strong><small>Review sample catalogue, stock levels and categories.</small><em>Browse inventory →</em></span></button>
+          </div>
+          <article class="panel snapshot"><div class="panel-heading"><div><h2>Operational snapshot</h2><p>Current sample dataset indicators</p></div><button class="icon-button" id="refreshDashboard" type="button" aria-label="Refresh dashboard">↻</button></div><div class="snapshot-grid"><div><span>Pending purchase orders</span><strong id="kpiOrders">9</strong></div><div><span>Products in catalogue</span><strong id="kpiProducts">13</strong></div><div><span>Average selling price</span><strong id="kpiAverage">₹129.32</strong></div></div></article>
+        </section>
+        <section id="feature-page" class="page-view is-hidden"><div class="feature-page-toolbar"><div><h2 id="featurePageHeading"></h2><p id="featurePageDescription"></p></div><button type="button" class="secondary-button" id="backOverview">← Back to overview</button></div><div id="featurePageBody"></div></section>
+        <section id="search-page" class="page-view is-hidden"><article class="panel"><div class="panel-heading"><div><h2>Search results</h2><p id="searchSummary"></p></div></div><div id="searchResults"></div></article></section>
+      </div><footer class="workspace-footer"><span>ERP System · Enterprise Resource Planning</span><span>Sample workspace · connect live APIs to replace demo values</span></footer>
+    </section>
+  </main>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  
+<!-- Floating ERP Assistant -->
+<div id="erp-chatbot" class="erp-chatbot is-hidden">
+  <button id="erp-robot-launcher" class="erp-robot-launcher"
+          type="button" aria-label="Open ERP Assistant">
+    <img src="{{ url_for('static', path='images/erp-robot.png') }}"
+         alt="ERP Assistant robot">
+    <span class="erp-chat-hint">Need help? Ask your ERP Assistant!</span>
+  </button>
+
+  <section id="erp-chat-window" class="erp-chat-window is-hidden"
+           aria-label="ERP Assistant chat">
+    <header class="erp-chat-header">
+      <div>
+        <strong>ERP Assistant</strong>
+        <small>Ask about your business data</small>
+      </div>
+      <button id="erp-chat-close" type="button"
+              aria-label="Close chat">×</button>
+    </header>
+
+    <div id="erp-chat-messages" class="erp-chat-messages"
+         aria-live="polite">
+      <div class="erp-message bot">
+        Hi! 👋 I'm your ERP Assistant. How can I help you today?
+      </div>
+    </div>
+
+    <form id="erp-chat-form" class="erp-chat-form">
+      <input id="erp-chat-input" type="text"
+             placeholder="Ask about inventory, sales..."
+             autocomplete="off" aria-label="Your message" required>
+      <button id="erp-chat-send" type="submit"
+              aria-label="Send message">➤</button>
+    </form>
+  </section>
+</div>
+
+  <script src="{{ url_for('static', path='js/index.js') }}?v=2"></script>
+</body></html>

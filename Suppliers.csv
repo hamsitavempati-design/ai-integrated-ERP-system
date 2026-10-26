@@ -1,0 +1,14 @@
+Supplier Name,Country,On-Time Delivery %,Quality Rating,Average Delay (Days),Contact Email,Status,Contract Start,Payment Terms,Remarks
+Amul Distributors,India,96,4.8,1,amul.distributors@example.com,Active,2024-01-10,30 Days,Excellent reliability
+ITC Distributors,India,91,4.5,2,itc.distributors@example.com,Active,2024-03-15,30 Days,Good performance
+Tata Consumer Distributors,India,94,4.7,1,tata.consumer@example.com,Active,2023-11-20,45 Days,Stable supplier
+Adani Wilmar Distributors,India,88,4.3,3,adani.wilmar@example.com,Active,2024-02-12,30 Days,Occasional delays
+HUL Distributors,India,92,4.6,2,hul.distributors@example.com,Active,2023-08-01,45 Days,High volume supplier
+Colgate Distributors,India,95,4.7,1,colgate.distributors@example.com,Active,2024-04-18,30 Days,Good quality
+Coca-Cola Distributors,India,97,4.9,1,coca.cola@example.com,Active,2023-06-10,30 Days,Excellent delivery
+PepsiCo Distributors,India,89,4.4,3,pepsico.distributors@example.com,Active,2024-01-25,30 Days,Monitor delays
+London Dairy Distributors,India,84,4.2,4,london.dairy@example.com,Active,2025-01-15,30 Days,Seasonal supply risk
+Parle Distributors,India,93,4.6,2,parle.distributors@example.com,Active,2023-09-10,30 Days,Reliable
+KRBL Distributors,India,90,4.5,2,krbl.distributors@example.com,Active,2024-02-20,45 Days,Stable rice supplier
+Nestle Distributors,India,95,4.8,1,nestle.distributors@example.com,Active,2023-07-15,30 Days,Excellent supplier
+Reckitt Distributors,India,93,4.6,2,reckitt.distributors@example.com,Active,2024-05-10,30 Days,Reliable

@@ -1,0 +1,11 @@
+Customer ID,Customer Type,Region,City,Membership Tier,Registration Date,Preferred Channel,Status
+C001,Regular,Telangana,Hyderabad,Standard,2025-01-10,Store,Active
+C002,Family,Telangana,Hyderabad,Silver,2024-08-15,Store,Active
+C003,Regular,Telangana,Hyderabad,Standard,2025-03-20,Online,Active
+C004,Wholesale,Telangana,Hyderabad,Gold,2024-02-11,Store,Active
+C005,Family,Telangana,Warangal,Silver,2025-05-05,Store,Active
+C006,Regular,Telangana,Hyderabad,Standard,2025-07-12,Online,Active
+C007,Family,Telangana,Hyderabad,Gold,2024-11-25,Store,Active
+C008,Regular,Telangana,Warangal,Standard,2026-01-14,Store,Active
+C009,Wholesale,Telangana,Hyderabad,Gold,2023-09-18,Store,Active
+C010,Regular,Telangana,Hyderabad,Standard,2026-03-22,Online,Active

@@ -1,0 +1,6 @@
+Warehouse ID,Warehouse Name,Warehouse Type,City,State,Capacity,Manager,Status
+W001,Hyderabad Central,Store,Hyderabad,Telangana,25000,Store Manager 1,Active
+W002,Hyderabad North,Store,Hyderabad,Telangana,22000,Store Manager 2,Active
+W003,Hyderabad South,Store,Hyderabad,Telangana,24000,Store Manager 3,Active
+W004,Telangana Distribution Center,Distribution Center,Hyderabad,Telangana,100000,DC Manager,Active
+W005,Warangal Store,Store,Warangal,Telangana,18000,Store Manager 4,Active
