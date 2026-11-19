@@ -183,13 +183,19 @@ def setup_status():
 def register_owner(data: OwnerRegistration):
     if data.password != data.confirm_password:
         raise HTTPException(400, "Passwords do not match.")
-    with connect() as c:
-        if c.execute("SELECT 1 FROM users LIMIT 1").fetchone():
-            raise HTTPException(403, "The owner account is already set up. Public registration is closed.")
-        c.execute(
-            "INSERT INTO users(email,password_hash,role,active,created_at) VALUES(?,?,?,?,?)",
-            (str(data.email).lower(), hash_password(data.password), "owner", 1, int(time.time())),
-        )
+    try:
+        with connect() as c:
+            # Serialize first-owner setup so two concurrent requests cannot both
+            # pass the empty-workspace check.
+            c.execute("BEGIN IMMEDIATE")
+            if c.execute("SELECT 1 FROM users LIMIT 1").fetchone():
+                raise HTTPException(409, "The owner account is already set up. Public registration is closed.")
+            c.execute(
+                "INSERT INTO users(email,password_hash,role,active,created_at) VALUES(?,?,?,?,?)",
+                (str(data.email).lower(), hash_password(data.password), "owner", 1, int(time.time())),
+            )
+    except sqlite3.IntegrityError:
+        raise HTTPException(409, "The owner account could not be created because setup was completed already.") from None
     return {"ok": True, "message": "Owner account created. You can now sign in."}
 
 

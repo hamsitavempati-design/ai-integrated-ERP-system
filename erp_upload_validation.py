@@ -13,7 +13,7 @@ EXPECTED_COLUMNS = {
     "Products.csv": [
         "Product ID", "Product Name", "Category", "Subcategory",
         "Brand", "Unit", "Pack Size", "MRP", "Selling Price",
-        "Supplier Name", "Tax Rate", "Status",
+        "Supplier Name", "TaxRate", "Status",
     ],
     "Inventory.csv": [
         "Product ID", "Warehouse", "Opening Stock", "Current Stock",
