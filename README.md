@@ -1,6 +1,6 @@
 ## Live Demo
-🔗 https://YOUR-APP-NAME.onrender.com
-> Hosted on a free plan: the first load after inactivity can take 30-60 seconds.
+[🔗 https://YOUR-APP-NAME.onrender.com
+](https://ai-erp-system-szpd.onrender.com)> Hosted on a free plan: the first load after inactivity can take 30-60 seconds.
 > Demo login: hamsitavempati@gmail.com / demo password : Hamsi@2004
 
 ## Screenshots
