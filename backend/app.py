@@ -25,7 +25,10 @@ from erp_upload_validation import (
 
 app = FastAPI(title = "ERP System")
 
-ERP_DIR = os.path.dirname(os.path.abspath(__file__))
+BACKEND_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(BACKEND_DIR)
+ERP_DIR = os.path.join(PROJECT_ROOT, "data")        # CSV files and backups
+ASSETS_DIR = os.path.join(PROJECT_ROOT, "assets")   # images
 _DATA_FILES_LOCK = threading.RLock()
 _REQUIRED_RECORD_FIELDS = {
     "Products.csv": ["Product ID", "Product Name"],
@@ -107,12 +110,12 @@ def setup_auth_db():
 
 app.include_router(auth_router)
 # Mount the 'static' folder (CSS, JS, Images)
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory=ASSETS_DIR), name="static")
 
 # Fix #3: mounting a StaticFiles directory that doesn't exist yet crashes the whole
 # app at startup (before any request is even served). Guard it so a missing
 # react-chatbot/dist build doesn't take down the entire backend.
-_react_dist = "react-chatbot/dist"
+_react_dist = os.path.join(PROJECT_ROOT, "react-chatbot", "dist")
 if os.path.isdir(_react_dist):
     app.mount("/react-chatbot", StaticFiles(directory=_react_dist, html=True), name="react_chatbot")
     app.mount("/assets", StaticFiles(directory=os.path.join(_react_dist, "assets")), name="chatbot_assets")
@@ -132,11 +135,20 @@ async def vite_svg():
 templates = Jinja2Templates(directory="templates")
 
 
-@app.get("/", response_class=HTMLResponse)
-@app.get("/login", response_class=HTMLResponse)
-async def login_page(request: Request):
-    return templates.TemplateResponse(request = request, name = "index.html", context={})
+@app.get("/", include_in_schema=False)
+@app.get("/login", include_in_schema=False)
+async def login_page():
+    return FileResponse(os.path.join(PROJECT_ROOT, "index.html"), media_type="text/html")
 
+
+@app.get("/index.css", include_in_schema=False)
+async def frontend_css():
+    return FileResponse(os.path.join(PROJECT_ROOT, "index.css"), media_type="text/css")
+
+
+@app.get("/index.js", include_in_schema=False)
+async def frontend_js():
+    return FileResponse(os.path.join(PROJECT_ROOT, "index.js"), media_type="application/javascript")
 
 @app.post("/chat")
 async def chat(request: Request, file: UploadFile | None = File(None), user: dict = Depends(current_user),):
@@ -291,6 +303,7 @@ async def get_stats(user: dict = Depends(current_user)):
     try:
         # Load your CSVs (support fallback to Excel files)
         def _read_table(csv_path: str) -> pd.DataFrame:
+            csv_path = os.path.join(ERP_DIR, csv_path)
             if os.path.exists(csv_path):
                 try:
                     return pd.read_csv(csv_path)
@@ -639,12 +652,12 @@ async def get_uploaded_files(user: dict = Depends(current_user)):
         }
 
         for filename, description in data_files.items():
-            if os.path.exists(filename):
+            file_path = os.path.join(ERP_DIR, filename)
+            if os.path.exists(file_path):
                 # Get file size and row count
-                df = pd.read_csv(filename)
-                file_size = os.path.getsize(filename)
+                df = pd.read_csv(file_path)
+                file_size = os.path.getsize(file_path)
                 file_size_kb = round(file_size / 1024, 2)
-
                 files.append({
                     'name': filename,
                     'description': description,

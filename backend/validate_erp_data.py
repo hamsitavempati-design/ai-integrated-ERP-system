@@ -7,7 +7,7 @@ from pathlib import Path
 # Read-only: DOES NOT MODIFY ANY CSV FILES
 # ============================================================
 
-DATA_DIR = Path(__file__).resolve().parent
+DATA_DIR = Path(__file__).resolve().parent / "data"
 
 
 # ------------------------------------------------------------

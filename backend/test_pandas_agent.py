@@ -17,8 +17,7 @@ api_key = os.getenv("GROQ_API_KEY")
 print("Model:", model_name)
 
 # Load one CSV
-csv_files = sorted(Path.cwd().glob("*.csv"))
-
+csv_files = sorted((Path(__file__).resolve().parent.parent / "data").glob("*.csv"))
 if not csv_files:
     raise FileNotFoundError("No CSV files found.")
 

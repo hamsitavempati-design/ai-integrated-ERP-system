@@ -1,3 +1,14 @@
+## Live Demo
+🔗 https://YOUR-APP-NAME.onrender.com
+> Hosted on a free plan: the first load after inactivity can take 30-60 seconds.
+> Demo login: hamsitavempati@gmail.com / demo password : Hamsi@2004
+
+## Screenshots
+![Dashboard](docs/dashboard.png)
+![Upload Data](docs/upload_data.png)
+![NORA Chatbot](docs/chatbot.png)
+
+
 # AI-Powered ERP Dashboard
 
 An ERP-style business operations dashboard built with **Python, FastAPI, Pandas, React, and Groq-powered AI integration**. The project brings business datasets into one interface for operational monitoring, inventory analysis, sales insights, and natural-language business queries.

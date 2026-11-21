@@ -7,7 +7,7 @@ import pandas as pd
 # ERP UPLOAD VALIDATION
 # ============================================================
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent / "data"
 
 EXPECTED_COLUMNS = {
     "Products.csv": [

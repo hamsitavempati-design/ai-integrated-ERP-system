@@ -6,7 +6,7 @@ import pandas as pd
 # ERP DATA DIRECTORY
 # ---------------------------------------------------------
 
-BASE_DIR = Path(__file__).resolve().parent
+BASE_DIR = Path(__file__).resolve().parent.parent / "data"
 
 
 # ---------------------------------------------------------
